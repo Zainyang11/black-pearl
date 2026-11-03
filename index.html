@@ -290,11 +290,11 @@ svg.i{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stro
 @keyframes spin{from{opacity:0;transform:translateX(calc(-50% - 40px))}to{opacity:1;transform:translateX(-50%)}}
 .stage.chat .sprite{display:none}
 /* the player's own figure, bottom-left in the list view (like Craft) */
-.pcfig{position:absolute;z-index:3;left:max(12px,calc(50% - 640px));bottom:0;height:min(46vh,420px);aspect-ratio:2/3;padding:0;-webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 98%);mask-image:linear-gradient(180deg,#000 62%,transparent 98%);transition:transform .25s,filter .25s;filter:drop-shadow(0 10px 24px rgba(0,0,0,.5))}
-.pcfig img{width:100%;height:100%;object-fit:contain;object-position:bottom}
+.pcfig{position:absolute;z-index:3;left:calc((50% - 320px) / 2);translate:-50% 0;bottom:8px;width:min(calc(50% - 400px),27vh,250px);aspect-ratio:2/5;padding:0;background:none;-webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 99%);mask-image:linear-gradient(180deg,#000 70%,transparent 99%);transition:transform .25s,filter .25s;filter:drop-shadow(0 12px 28px rgba(0,0,0,.55))}
+.pcfig img{width:100%;height:100%;object-fit:cover;object-position:50% 100%}
 .pcfig:hover{transform:translateY(-6px);filter:drop-shadow(0 10px 24px rgba(0,0,0,.5)) brightness(1.08)}
 .stage.vn .pcfig{display:none}
-@media (max-width:1240px){.pcfig{display:none}}
+@media (max-width:1180px){.pcfig{display:none}}
 .rail-r .av img{width:100%;height:100%;object-fit:cover;object-position:50% 8%}
 .motto{font-family:var(--f-story);font-style:italic;font-size:13px;color:var(--ink-2);margin:-2px 0 10px}
 .bio label{display:block;font-size:11.5px;color:var(--mute);margin:0 0 10px}
